@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+    
+</head>
+<body class="corpoDecodificador">
+    <header> <!--barra de navegação--> 
+        <!--<img id="logo" src="./toCripto.png" alt="logo">-->
+        <nav class="barraDeNavegacao">    
+            <ul class="linksUteis">
+                <li class="item">HOME</li>
+                <li class="item">ABOUT</li>
+                <li class="item">CONTACT US</li>
+            </ul>
+        </nav>
+   </header>
+        <!--conteudo principal-->
+    <main class="conteudoPrincipal">
+        <form id="formulario">
+            <h1 class="titulo">CRIPTOGRAFE</h1>
+            <section class="containerTextoDecodificador">   
+                <p class="textoDecodificador"> Escolha seu método de codificação e proteja suas mensagens!</p>
+            </section> 
+            <section class="containerDecodificador">
+                <div class="escolhaEIncremento">
+                    <select id="selecione">
+                        <option value="text" disabled selected>ESCOLHA</option>
+                        <option value="cesar" id="cesar">CIFRA DE CÉSAR</option>
+                        <option value="base64" id="base64">Base64</option>
+                    </select>
+                    <input id="incremento" type="number" value="1" placeholder="passos" >
+                </div>
+                <div class="radiosDecodificador">
+                    <input type="radio" name="codificarEDecoficador" id="decodificar"> <!--esse input será utilizado para determinar o valor que aparecerá no button, se codificar ou decodificar-->
+                    <label for="decodificar">Decodificar</label>
+                    <input type="radio" name="codificarEDecoficador" id="codificar">
+                    <label for="codificar">Codificar</label>
+                </div>
+                <div class="areasDeTexto">
+                   <textarea name="text" id="recebeTexto" cols="40" rows="5" placeholder="Escreva aqui..."></textarea>
+                    <textarea disabled name="text" id="retornaTexto" cols="40" rows="5" placeholder="Seu texto codificado aqui.."></textarea> 
+                </div>
+            </section>
+        </form>
+        <section class="containerBotaoEscolha">
+            <button class="botaoEscolha">escolha uma alternativa</button>
+        </section>
+    </main>
+        <!--rodapé do texto-->
+    <footer class="rodape">
+        <p class="textoRodape">TODOS OS DIREITOS RESERVADOS</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

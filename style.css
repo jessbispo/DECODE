@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'hacked';
+    src: url("./fonte/Hacked-KerX.ttf");
+}
+
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.corpoPrincipal {
+    background-image: url(https://i.pinimg.com/originals/59/60/bc/5960bc897430c5d54971d3934a46a29f.gif);
+    /*background-image: url(https://i.gifer.com/5ARz.gif);*/
+    background-size: 100%;
+    background-position: 0;
+    
+}
+
+header {
+    max-height: 20vh;
+    width: 100%;
+    
+}
+
+.barraDeNavegacao {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.linksUteis {
+    display: flex;
+    gap: 40px;
+    color: black;
+
+}
+
+.item {
+    display: flex;
+    color: #fafafa;
+}
+
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: #fafafa;
+    font-family: 'hacked';
+    font-size: 60px;
+}
+
+.containerTexto {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 70vw;
+    
+    color: #fafafa;
+}
+
+.texto {
+    width: 80%;
+    height: 80%;
+    font-size: 20px;
+}
+
+
+.containerBotao {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    
+    
+}
+
+button {
+    border-radius: 10px;
+    width: 20%;
+    height: 20%;
+    background-color: #fafafa;
+    font-family: 'hacked';
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #070a0e;
+    color: #fafafa;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 1;
+    left: 30%;
+    right: 30%;
+    margin: 5% 0 0 0;
+}
+
+.textoRodape {
+    font-size: small;
+    color: #fafafa;
+    position: absolute;
+    bottom: 1;
+    
+}
+
+/*estilizando a pagina do decodificador*/
+.corpoDecodificador {
+    background: #00221c;
+}
+.containerTextoDecodificador {
+    display: flex;
+    justify-content: center;
+}
+
+.textoDecodificador {
+    font-size: 20px;
+    color: #fafafa;
+    
+}
+
+.escolhaEIncremento {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+#selecione {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin: 10px;
+    
+    
+}
+
+#incremento {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin: 10px;
+}
+
+.radiosDecodificador {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: #fafafa;
+}
+
+.areasDeTexto {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+textarea {
+    color: black;
+    border-radius: 10px;
+    margin: 20px;
+    resize: none;
+}
+
+.containerBotaoEscolha {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+/*adicionando responsividade*/
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 50px;
+    }
+    .textoRodape {
+        font-size: 5px;
+    }
+}
+    
+@media screen and (max-width: 800px) {
+    
+    .linksUteis {
+        display: flex;
+        gap: 20px;
+    }
+   
+    .corpoPrincipal {
+        background-size: 200%;
+        background-position: center;
+    }
+
+    button {
+        width: auto;
+    }
+    .textoRodape {
+        font-size: 10px;
+    }
+    
+    .areasDeTexto {
+        display: flex;
+        flex-direction: column ;
+    }
+}
